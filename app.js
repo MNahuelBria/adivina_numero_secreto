@@ -12,7 +12,7 @@ const pedirNumero = () => {
 // creamos la funcion principal para generar el juego de adivinanza
 const juegoAdivinanza = () => {
     const numeroSecreto = generarNumeroAleatorio();
-    let numeroAdivinado = 0;
+    let numeroAdivinado;
 
     console.log('¡Bienvenido a Adivina el número secreto!');
     console.log('Intenta adivinar el número del 1 al 100.\n');

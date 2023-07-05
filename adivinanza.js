@@ -6,12 +6,12 @@ const generarNumeroAleatorio = () => {
 
 // funcion para verificar si ambos numeros son iguales o no
 const verificarAdivinanza = (numeroAdivinado, numeroSecreto) => {
-    if (numeroAdivinado === numeroSecreto) {
-        console.log("¡FELICIDADES ACERTASTE EL NUMERO!");
-    } else if (numeroAdivinado > numeroSecreto) {
+    if (numeroAdivinado > numeroSecreto) {
         console.log("EL NUMERO SECRETO ES MENOR");
-    } else {
+    } else if (numeroAdivinado < numeroSecreto) {
         console.log("EL NUMERO SECRETO ES MAYOR.")
+    } else {
+        console.log("¡FELICIDADES ACERTASTE EL NUMERO!");
     }
 };
 
